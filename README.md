@@ -47,7 +47,7 @@ We present a novel method, named **Pseudo-Q**, to automatically generate pseudo 
 - [RefCOCO and ReferItGame](https://github.com/lichengunc/refer)
 - [Flickr30K Entities](https://bryanplummer.com/Flickr30kEntities/)
 
-2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud]().
+2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5b8dc3dc289c49c18740/?dl=1).
 ```
 mkdir data
 mv pseudo_samples.tar.gz ./data/
@@ -72,7 +72,7 @@ mv detr_checkpoints.tar.gz ./checkpoints/
 tar -zxvf checkpoints.tar.gz
 ```
 
-2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5b8dc3dc289c49c18740/?dl=1). You can evaluate the checkpoints following the instruction right below.
+2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](). You can evaluate the checkpoints following the instruction right below.
 
 ```
 mv pseudoq_checkpoints.tar.gz ./checkpoints/
