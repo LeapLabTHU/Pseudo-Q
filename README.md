@@ -1,9 +1,13 @@
 # Pseudo-Q
-<p align="center"> <img src='docs/framework.jpg' align="center" height="200px"> </p>
+<p align="center"> <img src='docs/framework.jpg' align="center" height="250px"> </p>
 
 This repository is the official Pytorch implementation for CVPR2022 paper **Pseudo-Q: Generating Pseudo Language Queries for Visual Grounding**.
 
 **Update on 2022/03/15: Release the training code.**
+
+## Todo
+- [x] Release the training code.
+- [ ] Release the code for generating pseudo-samples.
 
 ## Reference
 
@@ -60,7 +64,7 @@ tar -zxvf image_data.tar.gz
 
 
 ### Pretrained Checkpoints
-1.You can download the DETR checkpoints from [Tsinghua Cloud](). These checkpoints should be downloaded and move to the [checkpoints](./checkpoints) directory.
+1.You can download the DETR checkpoints from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/4b351e75efe94e42bb19/?dl=1). These checkpoints should be downloaded and move to the [checkpoints](./checkpoints) directory.
 
 ```
 mkdir checkpoints
@@ -68,7 +72,7 @@ mv detr_checkpoints.tar.gz ./checkpoints/
 tar -zxvf checkpoints.tar.gz
 ```
 
-2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](). You can evaluate the checkpoints following the instruction right below.
+2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5b8dc3dc289c49c18740/?dl=1). You can evaluate the checkpoints following the instruction right below.
 
 ```
 mv pseudoq_checkpoints.tar.gz ./checkpoints/
