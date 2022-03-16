@@ -95,6 +95,18 @@ tar -zxvf pseudoq_checkpoints.tar.gz
     
     Please refer to [scripts/eval.sh](scripts/eval.sh) for evaluation commands on other splits or datasets.
 
+## Results
+
+### Results on RefCOCO/RefCOCO+/RefCOCOg
+
+<p align="center"> <img src='docs/result1.png' align="center" height="250px"> </p>
+
+### Results on ReferItGame/Flickr30K Entities
+
+<p align="center"> <img src='docs/result2.png' align="center" height="300px"> </p>
+
+Please refer to our paper for more details.
+
 ## Contacts
 jhj20 at mails dot tsinghua dot edu dot cn
 
