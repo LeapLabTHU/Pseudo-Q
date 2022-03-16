@@ -72,7 +72,7 @@ mv detr_checkpoints.tar.gz ./checkpoints/
 tar -zxvf checkpoints.tar.gz
 ```
 
-2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](). You can evaluate the checkpoints following the instruction right below.
+2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5c19604ccc8a4cd590a3/?dl=1). You can evaluate the checkpoints following the instruction right below.
 
 ```
 mv pseudoq_checkpoints.tar.gz ./checkpoints/
