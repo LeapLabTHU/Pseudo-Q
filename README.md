@@ -1,5 +1,5 @@
 # Pseudo-Q
-<p align="center"> <img src='docs/framework.jpg' align="center" height="250px"> </p>
+<p align="center"> <img src='docs/framework.png' align="center" height="250px"> </p>
 
 This repository is the official Pytorch implementation for CVPR2022 paper [**Pseudo-Q: Generating Pseudo Language Queries for Visual Grounding**](https://arxiv.org/abs/2203.08481).
 
@@ -54,13 +54,7 @@ mv pseudo_samples.tar.gz ./data/
 tar -zxvf pseudo_samples.tar.gz
 ```
 
-<!--3.For your convenience, we also provide the data(RefCOCO and ReferItGame) from [Tsinghua Cloud](). Since we do not have the copyright of the images in Flickr30K Entities dataset, you have to download from the above link.
-    
-```
-mv image_data.tar.gz ./data/
-tar -zxvf image_data.tar.gz
-```
--->
+For generating pseudo-samples, we adopt the pretrained detector and attribute classifier from the [Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering](https://arxiv.org/abs/1707.07998). The pytorch implementation of this paper is available at [https://github.com/MILVLG/bottom-up-attention.pytorch](https://github.com/MILVLG/bottom-up-attention.pytorch).
 
 
 ### Pretrained Checkpoints
@@ -114,4 +108,4 @@ Any discussions or concerns are welcomed!
 
 
 ## Acknowledge
-This codebase is based on [TransVG](https://github.com/djiajunustc/TransVG).
+This codebase is built on [TransVG](https://github.com/djiajunustc/TransVG).
