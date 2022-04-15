@@ -107,5 +107,5 @@ jhj20 at mails dot tsinghua dot edu dot cn
 Any discussions or concerns are welcomed!
 
 
-## Acknowledge
+## Acknowledgments
 This codebase is built on [TransVG](https://github.com/djiajunustc/TransVG).
