@@ -43,9 +43,33 @@ We present a novel method, named **Pseudo-Q**, to automatically generate pseudo 
 
 
 ### Data Preparation
-1.You can download the images from the original source and place them in ./data/image_data folder:
+1.You can download the images from the original source and place them in `./data/image_data` folder:
 - [RefCOCO and ReferItGame](https://github.com/lichengunc/refer)
 - [Flickr30K Entities](https://bryanplummer.com/Flickr30kEntities/)
+
+Finally, the `./data/image_data` folder will have the following structure:
+
+```angular2html
+|-- image_data
+   |-- data
+   |  |-- flickr
+   |  |-- gref
+   |  |-- gref_umd
+   |  |-- referit
+   |  |-- unc
+   |  |-- unc+
+   |-- Flickr30k
+   |  |-- flickr30k-images
+   |-- other
+   |  |-- images
+   |  |-- refcoco
+   |  |-- refcoco+
+   |  |-- refcocog
+   |-- referit
+   |  |-- images
+   |  |-- mask
+   |  |-- splits
+```
 
 2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5b8dc3dc289c49c18740/?dl=1).
 ```
