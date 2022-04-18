@@ -52,23 +52,23 @@ Finally, the `./data/image_data` folder will have the following structure:
 ```angular2html
 |-- image_data
    |-- data
-   |  |-- flickr
-   |  |-- gref
-   |  |-- gref_umd
-   |  |-- referit
-   |  |-- unc
-   |  |-- unc+
+      |-- flickr
+      |-- gref
+      |-- gref_umd
+      |-- referit
+      |-- unc
+      |-- unc+
    |-- Flickr30k
-   |  |-- flickr30k-images
+      |-- flickr30k-images
    |-- other
-   |  |-- images
-   |  |-- refcoco
-   |  |-- refcoco+
-   |  |-- refcocog
+      |-- images
+      |-- refcoco
+      |-- refcoco+
+      |-- refcocog
    |-- referit
-   |  |-- images
-   |  |-- mask
-   |  |-- splits
+      |-- images
+      |-- mask
+      |-- splits
 ```
 
 2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5b8dc3dc289c49c18740/?dl=1).
