@@ -1,8 +1,13 @@
 # Pseudo-Q
 <p align="center"> <img src='docs/framework.png' align="center" height="250px"> </p>
 
-This repository is the official Pytorch implementation for CVPR2022 paper [**Pseudo-Q: Generating Pseudo Language Queries for Visual Grounding**](https://arxiv.org/abs/2203.08481). (Primary Contact: [Haojun Jiang](https://github.com/jianghaojun))
+This repository is the official Pytorch implementation for CVPR2022 paper **Pseudo-Q: Generating Pseudo Language Queries for Visual Grounding**. (Primary Contact: [Haojun Jiang](https://github.com/jianghaojun))
 
+<h3 align="center">
+Links: <a href="https://arxiv.org/abs/2203.08481">arXiv</a> | <a href="https://cloud.tsinghua.edu.cn/f/e3fe3658f56243f982dc/">Poster</a> | <a href="https://cloud.tsinghua.edu.cn/f/d655d6e2a6b246b4bb4f/">Video</a>
+</h3>
+
+## News
 **Update on 2022/03/15: Release the training code.**
 
 ## Todo
