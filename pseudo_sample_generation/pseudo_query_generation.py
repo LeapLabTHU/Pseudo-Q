@@ -440,8 +440,6 @@ def relative_spatial_location(descriptor, image_size):
                             else:
                                 pass
 
-    ### TODO: "next to something" relation
-
     return descriptor
 
 
