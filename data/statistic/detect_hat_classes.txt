@@ -1,0 +1,10 @@
+beanie
+scarf
+cap
+headband
+visor
+hat
+goggles
+helmet
+sunglasses
+glasses

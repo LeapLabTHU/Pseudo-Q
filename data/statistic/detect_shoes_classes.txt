@@ -1,0 +1,10 @@
+cleats
+sandals
+socks
+sandal
+sneaker
+boot
+shoes
+sneakers
+boots
+shoe

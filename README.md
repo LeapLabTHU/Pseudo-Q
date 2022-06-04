@@ -7,13 +7,12 @@ This repository is the official Pytorch implementation for CVPR2022 paper **Pseu
 Links: <a href="https://arxiv.org/abs/2203.08481">arXiv</a> | <a href="https://cloud.tsinghua.edu.cn/f/e5f6df930e5d4b21ae27/">Poster</a> | <a href="https://cloud.tsinghua.edu.cn/f/d655d6e2a6b246b4bb4f/">Video</a>
 </h3>
 
-## News
-**Update on 2022/03/15: Release the training code.**  
-**Update on 2022/06/02: Provide the poster and presentation video.**
+**Please leave a <font color='orange'>STAR</font> if you like this project!**
 
-## Todo
-- [x] Release the training code.
-- [ ] Release the code for generating pseudo-samples.
+## News
+- Update on 2022/03/15: Release the training code.  
+- Update on 2022/06/02: Provide the poster and presentation video.
+- **Update on 2022/06/04: Release the pseudo-query generation code.**
 
 ## Reference
 
@@ -77,18 +76,18 @@ Finally, the `./data/image_data` folder will have the following structure:
       |-- splits
 ```
 
-2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5b8dc3dc289c49c18740/?dl=1).
+2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/0c7ba8c1c0db40cfbea8/?dl=1) or you can generate it follow [instructions](./pseudo_sample_generation/README.md).
 ```
 mkdir data
 mv pseudo_samples.tar.gz ./data/
 tar -zxvf pseudo_samples.tar.gz
 ```
 
-For generating pseudo-samples, we adopt the pretrained detector and attribute classifier from the [Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering](https://arxiv.org/abs/1707.07998). The pytorch implementation of this paper is available at [https://github.com/MILVLG/bottom-up-attention.pytorch](https://github.com/MILVLG/bottom-up-attention.pytorch).
+For generating pseudo-samples, we adopt the pretrained detector and attribute classifier from the [Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering](https://arxiv.org/abs/1707.07998). The pytorch implementation of this paper is available at [bottom-up-attention](https://github.com/MILVLG/bottom-up-attention.pytorch).
 
 
 ### Pretrained Checkpoints
-1.You can download the DETR checkpoints from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/4b351e75efe94e42bb19/?dl=1). These checkpoints should be downloaded and move to the [checkpoints](./checkpoints) directory.
+1.You can download the DETR checkpoints from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/580d602748174298880d/?dl=1). These checkpoints should be downloaded and move to the [checkpoints](./checkpoints) directory.
 
 ```
 mkdir checkpoints
@@ -96,7 +95,7 @@ mv detr_checkpoints.tar.gz ./checkpoints/
 tar -zxvf checkpoints.tar.gz
 ```
 
-2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/5c19604ccc8a4cd590a3/?dl=1). You can evaluate the checkpoints following the instruction right below.
+2.Checkpoints that trained on our pseudo-samples can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/ebcfb88241ed45ea8115/?dl=1). You can evaluate the checkpoints following the instruction right below.
 
 ```
 mv pseudoq_checkpoints.tar.gz ./checkpoints/
@@ -137,4 +136,4 @@ jhj20 at mails dot tsinghua dot edu dot cn
 Any discussions or concerns are welcomed!
 
 ## Acknowledgments
-This codebase is built on [TransVG](https://github.com/djiajunustc/TransVG).
+This codebase is built on [TransVG](https://github.com/djiajunustc/TransVG), [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention) and [Faster-R-CNN-with-model-pretrained-on-Visual-Genome](https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome). Please consider citing or starring these projects.

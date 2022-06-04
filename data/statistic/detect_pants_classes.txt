@@ -1,0 +1,14 @@
+pant
+short
+slacks
+sweatpants
+overalls
+jean
+shoes
+boots
+belt
+skirt
+pants
+tights
+jeans
+shorts
