@@ -7,7 +7,7 @@ This repository is the official Pytorch implementation for CVPR2022 paper **Pseu
 Links: <a href="https://arxiv.org/abs/2203.08481">arXiv</a> | <a href="https://cloud.tsinghua.edu.cn/f/e5f6df930e5d4b21ae27/">Poster</a> | <a href="https://cloud.tsinghua.edu.cn/f/d655d6e2a6b246b4bb4f/">Video</a>
 </h3>
 
-**Please leave a <font color='orange'>STAR</font> if you like this project!**
+**Please leave a <font color='orange'>STAR ⭐</font> if you like this project!**
 
 ## News
 - Update on 2022/03/15: Release the training code.  
