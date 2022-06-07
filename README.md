@@ -49,7 +49,7 @@ We present a novel method, named **Pseudo-Q**, to automatically generate pseudo 
 
 ### Data Preparation
 1.You can download the images from the original source and place them in `./data/image_data` folder:
-- [RefCOCO and ReferItGame](https://github.com/lichengunc/refer)
+- RefCOCO and ReferItGame
 - [Flickr30K Entities](http://shannon.cs.illinois.edu/DenotationGraph/#:~:text=make%20face-,Downloads,-Please%20fill%20in)
 
 Finally, the `./data/image_data` folder will have the following structure:
