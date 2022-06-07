@@ -50,7 +50,7 @@ We present a novel method, named **Pseudo-Q**, to automatically generate pseudo 
 ### Data Preparation
 1.You can download the images from the original source and place them in `./data/image_data` folder:
 - [RefCOCO and ReferItGame](https://github.com/lichengunc/refer)
-- [Flickr30K Entities](https://bryanplummer.com/Flickr30kEntities/)
+- [Flickr30K Entities](http://shannon.cs.illinois.edu/DenotationGraph/#:~:text=make%20face-,Downloads,-Please%20fill%20in)
 
 Finally, the `./data/image_data` folder will have the following structure:
 
@@ -75,6 +75,12 @@ Finally, the `./data/image_data` folder will have the following structure:
       |-- mask
       |-- splits
 ```
+- ```./data/image_data/data/xxx/```: Take the Flickr30K dataset as an example, ./data/image_data/data/flickr/ shoud contain files about the dataset's validation/test annotations(bbox-query pairs download from [Gdrive](https://drive.google.com/file/d/1fVwdDvXNbH8uuq_pHD_o5HI7yqeuz0yS/view?usp=sharing)) and our generated pseudo-annotations(pseudo-samples) for this dataset. You should uncompress the provided pseudo-sample files and put them on the corresponding folder.
+- ```./data/image_data/Flickr30k/flickr30k-images/```: Image data for the Flickr30K dataset, please download from this [link](http://shannon.cs.illinois.edu/DenotationGraph/#:~:text=make%20face-,Downloads,-Please%20fill%20in). Fill the form and download the images.
+- ```./data/image_data/other/images/```: Image data for RefCOCO/RefCOCO+/RefCOCOg. 
+- ```./data/image_data/referit/images/```: Image data for ReferItGame.
+- Besides, I notice the links of refcoco/refcoco+/refcocog/referit data are not available recently. **You can leave an email in [Issues#2](https://github.com/LeapLabTHU/Pseudo-Q/issues/2) and I will send you a download link**.
+- ```./data/image_data/other/refcoco/, ./data/image_data/other/refcoco+/, ./data/image_data/other/refcocog/, ./data/image_data/referit/mask/, ./data/image_data/referit/splits/```: I follow the TransVG to prepare the data and I find these folders actually are not used in training.
 
 2.The generated pseudo region-query pairs can be download from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/0c7ba8c1c0db40cfbea8/?dl=1) or you can generate it follow [instructions](./pseudo_sample_generation/README.md).
 ```
@@ -82,6 +88,7 @@ mkdir data
 mv pseudo_samples.tar.gz ./data/
 tar -zxvf pseudo_samples.tar.gz
 ```
+Note that to train the model with pseudo samples for different dataset you should put the uncompressed pseudo sample files under the right folder ```./data/image_data/data/xxx/```. For example, put the ```flickr_train_pseudo.pth``` under ```./data/image_data/data/flickr/```.
 
 For generating pseudo-samples, we adopt the pretrained detector and attribute classifier from the [Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering](https://arxiv.org/abs/1707.07998). The pytorch implementation of this paper is available at [bottom-up-attention](https://github.com/MILVLG/bottom-up-attention.pytorch).
 
