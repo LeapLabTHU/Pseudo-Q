@@ -120,15 +120,23 @@ tar -zxvf pseudoq_checkpoints.tar.gz
 
 ## Results
 
-### Results on RefCOCO/RefCOCO+/RefCOCOg
+**1. Visualization of Pseudo-samples.**
 
-<p align="center"> <img src='docs/result1.png' align="center" height="250px"> </p>
+   <p align="center"> <img src='docs/vis_pesudo_sample.png' align="center" height="200px"> </p>
 
-### Results on ReferItGame/Flickr30K Entities
+**2. Experiments of Reducing the Manual Labeling Cost on RefCOCO.**
 
-<p align="center"> <img src='docs/result2.png' align="center" height="300px"> </p>
+   <p align="center"> <img src='docs/reducing_cost.png' align="center" height="200px"> </p>
 
-Please refer to our paper for more details.
+**3. Results on RefCOCO/RefCOCO+/RefCOCOg.**
+
+   <p align="center"> <img src='docs/result1.png' align="center" height="250px"> </p>
+
+**4. Results on ReferItGame/Flickr30K Entities.**
+
+   <p align="center"> <img src='docs/result2.png' align="center" height="300px"> </p>
+
+**Please refer to our paper for more details.**.
 
 ## Contacts
 jhj20 at mails dot tsinghua dot edu dot cn
