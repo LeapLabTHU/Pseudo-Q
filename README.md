@@ -12,7 +12,8 @@ Links: <a href="https://arxiv.org/abs/2203.08481">arXiv</a> | <a href="https://c
 ## News
 - Update on 2022/03/15: Release the training code.  
 - Update on 2022/06/02: Provide the poster and presentation video.
-- **Update on 2022/06/04: Release the pseudo-query generation code.**
+- Update on 2022/06/04: Release the pseudo-query generation code.
+- **Update on 2022/08/25: Provide the detection results for all datasets.**
 
 ## Reference
 
