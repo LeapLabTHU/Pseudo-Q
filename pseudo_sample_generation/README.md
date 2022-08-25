@@ -5,7 +5,7 @@
 ### Detection Results Preparation
 First, we adopt the [Faster-R-CNN-with-model-pretrained-on-Visual-Genome](https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome) to get the object proposals of unlabeled images. Second, we utilize the [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention) to get attributes of objects.
 
-- You can download the detection results from [Google Drive](https://drive.google.com/file/d/148yX36rLXNFZysop6PlP0XUKmQB3PSqT/view?usp=sharing) and put them in the right place.
+- You can download the detection results from [Google Drive](https://drive.google.com/file/d/1rC2TEnLlQe-URGRh5_rpmGGExvQDFcZV/view?usp=sharing) and put them in the right place.
 
     ```
     $ mv detection_results.tar.gz ./Pseudo-Q/data/
