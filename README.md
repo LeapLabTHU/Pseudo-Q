@@ -116,14 +116,13 @@ tar -zxvf pseudoq_checkpoints.tar.gz
     ```
     CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port 28888 --use_env train.py --num_workers 8 --epochs 10 --batch_size 32 --lr 0.00025 --lr_bert 0.000025 --lr_visu_cnn 0.000025 --lr_visu_tra 0.000025 --lr_scheduler cosine --aug_crop --aug_scale --aug_translate --backbone resnet50 --detr_model checkpoints/detr-r50-unc.pth --bert_enc_num 12 --detr_enc_num 6 --dataset unc --max_query_len 20 --data_root ./data/image_data --split_root ./data/pseudo_samples/ --prompt "find the region that corresponds to the description {pseudo_query}" --output_dir ./outputs/unc/;
     ```
-
-    Please refer to [scripts/train.sh](scripts/train.sh) for training commands on other datasets.
+    *Notably, if you use a smaller batch size, you should also use a smaller learning rate. Original learning rate is set for batch size 256(8GPU x 32).* 
+    Please refer to [scripts/train.sh](scripts/train.sh) for training commands on other datasets. 
 
 2.  Evaluation on RefCOCO.
     ```
     CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port 28888 --use_env eval.py --num_workers 4 --batch_size 128 --backbone resnet50 --bert_enc_num 12 --detr_enc_num 6 --dataset unc --max_query_len 20 --data_root ./data/image_data --split_root ./data/pseudo_samples/ --eval_model ./checkpoints/unc_best_checkpoint.pth --eval_set testA --prompt "find the region that corresponds to the description {pseudo_query}" --output_dir ./outputs/unc/testA/;
     ```
-    
     Please refer to [scripts/eval.sh](scripts/eval.sh) for evaluation commands on other splits or datasets.
 
 ## Results
