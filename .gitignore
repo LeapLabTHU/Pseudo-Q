@@ -2,7 +2,6 @@
 **build**
 **egg-info**
 **dist**
-data/
 *.pyc
 venv/
 *.idea/
@@ -12,7 +11,6 @@ venv/
 *.zip
 *.bin
 outputs
-data
 checkpoints
 __pycache__
 *.DS_Store
