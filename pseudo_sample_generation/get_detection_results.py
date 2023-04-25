@@ -37,7 +37,7 @@ from detectron2.evaluation import COCOEvaluator, verify_results
 from detectron2.engine import DefaultTrainer, default_setup, launch
 from detectron2.data import build_detection_test_loader, build_detection_train_loader
 
-from models.bua.layers.nms import nms
+from models.bua.layers.nms import nms # The import file is here: https://github.com/MILVLG/bottom-up-attention.pytorch/blob/master/bua/caffe/modeling/layers/nms.py
 from models.bua import add_bottom_up_attention_config
 from utils.extract_utils import get_image_blob
 
