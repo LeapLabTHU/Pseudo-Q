@@ -3,7 +3,7 @@
 ## Usage
 
 ### Detection Results Preparation
-First, we adopt the [Faster-R-CNN-with-model-pretrained-on-Visual-Genome](https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome) to get the object proposals of unlabeled images. Second, we utilize the [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention) to get attributes of objects.
+First, we adopt the [Faster-R-CNN-with-model-pretrained-on-Visual-Genome](https://github.com/shilrley6/Faster-R-CNN-with-model-pretrained-on-Visual-Genome) to get the object proposals of unlabeled images. Second, we utilize the [bottom-up-attention](https://github.com/MILVLG/bottom-up-attention.pytorch) to get attributes of objects.
 
 - You can download the detection results from [Google Drive](https://drive.google.com/file/d/1rC2TEnLlQe-URGRh5_rpmGGExvQDFcZV/view?usp=sharing) and put them in the right place.
 
@@ -12,7 +12,7 @@ First, we adopt the [Faster-R-CNN-with-model-pretrained-on-Visual-Genome](https:
     $ tar -zxvf detection_results.tar.gz
     ```
 
-- Or you can follow the tutorial in the above two repositories to get detection results by your own. Here, I provide [a code script](get_detection_results.py) to help researchers to generate object detection and attribute recognition results based on [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention). 
+- Or you can follow the tutorial in the above two repositories to get detection results by your own. Here, I provide [a code script](get_detection_results.py) to help researchers to generate object detection and attribute recognition results based on [bottom-up-attention](https://github.com/MILVLG/bottom-up-attention.pytorch). 
     
     1. Please follow the instruction in bottom-up-attention to build the environment.
     1. Before running the code, you should get the [config file](extract-bua-caffe-r152.yaml), download the checkpoint weights from [Google Drive](https://drive.google.com/file/d/10oU4Zr06YOX7PlgJ8rDpNjXwXgupNNUL/view?usp=sharing) or [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/7410b68588b342c481f6/), and put these files on the right path.
